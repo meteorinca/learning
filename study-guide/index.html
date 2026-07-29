@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A practical guide for parents, teachers, and students on how to study STEM and learn anything well.">
+  <meta name="theme-color" content="#f5f1e8">
+  <title>The Learning Ritual | A STEM Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to guide</a>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="The Learning Ritual home">
+      <span class="brand-mark" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+      <span>The Learning Ritual</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#pillars">Mindset</a>
+      <a href="#ritual">Ritual</a>
+      <a href="#space">Study Space</a>
+      <a href="#zoom">Zoom</a>
+      <a href="#practice">Practice</a>
+    </nav>
+
+    <button class="icon-button menu-button" type="button" aria-label="Open menu" aria-expanded="false" data-menu-button>
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" data-mobile-menu hidden>
+    <a href="#pillars">Mindset</a>
+    <a href="#ritual">Ritual</a>
+    <a href="#space">Study Space</a>
+    <a href="#zoom">Zoom Learning</a>
+    <a href="#practice">Practice</a>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+
+      <div class="hero-copy reveal">
+        <p class="eyebrow">A quick guide for parents, teachers, and students</p>
+        <h1>Learning is not a talent.<br><em>It is a ritual.</em></h1>
+        <p class="hero-intro">STEM becomes manageable when the learner has the right character, the right space, and a repeatable way to practice.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#ritual">Build the ritual</a>
+          <button class="button button-quiet" type="button" data-print>Print the guide</button>
+        </div>
+      </div>
+
+      <div class="hero-card reveal" style="--delay: 120ms">
+        <p class="card-label">The three requirements</p>
+        <div class="hero-pillars">
+          <article>
+            <span class="pillar-number">01</span>
+            <h2>Perseverance</h2>
+            <p>Stay with the problem after the first plan fails.</p>
+          </article>
+          <article>
+            <span class="pillar-number">02</span>
+            <h2>Curiosity</h2>
+            <p>Ask what, why, how, and what would happen if.</p>
+          </article>
+          <article>
+            <span class="pillar-number">03</span>
+            <h2>Ingenuity</h2>
+            <p>Try another representation, tool, example, or path.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true"><span></span>Scroll to begin</div>
+    </section>
+
+    <section class="section pillars-section" id="pillars">
+      <div class="section-heading reveal">
+        <p class="eyebrow">The learner's character</p>
+        <h2>Difficulty is not a verdict.</h2>
+        <p>It is information. A hard problem is telling the learner that a fact, connection, or method is still missing.</p>
+      </div>
+
+      <div class="pillar-cards">
+        <article class="pillar-card reveal" style="--delay: 0ms">
+          <div class="pillar-icon perseverance-icon" aria-hidden="true">
+            <svg viewBox="0 0 80 80"><path d="M17 58C27 58 28 23 40 23s13 35 23 35"/><circle cx="17" cy="58" r="5"/><circle cx="63" cy="58" r="5"/></svg>
+          </div>
+          <p class="card-kicker">When stuck</p>
+          <h3>Perseverance</h3>
+          <p>Pause, shrink the problem, find the last step that made sense, and begin there. Persistence is not repeating the same failed move forever.</p>
+          <button class="text-button" type="button" data-tip="perseverance">Show a useful phrase</button>
+        </article>
+
+        <article class="pillar-card reveal" style="--delay: 100ms">
+          <div class="pillar-icon curiosity-icon" aria-hidden="true">
+            <svg viewBox="0 0 80 80"><circle cx="35" cy="35" r="18"/><path d="M48 48l16 16M29 35h12M35 29v12"/></svg>
+          </div>
+          <p class="card-kicker">When confused</p>
+          <h3>Curiosity</h3>
+          <p>Confusion becomes useful when it turns into a precise question. “I don't get it” is a feeling. “Why did the sign change?” is a path forward.</p>
+          <button class="text-button" type="button" data-tip="curiosity">Show a useful phrase</button>
+        </article>
+
+        <article class="pillar-card reveal" style="--delay: 200ms">
+          <div class="pillar-icon ingenuity-icon" aria-hidden="true">
+            <svg viewBox="0 0 80 80"><path d="M30 53h20M32 61h16M40 13a19 19 0 0 0-11 35c3 2 4 4 4 7h14c0-3 1-5 4-7A19 19 0 0 0 40 13Z"/><path d="M40 3v5M14 14l4 4M66 14l-4 4M7 40h6M67 40h6"/></svg>
+          </div>
+          <p class="card-kicker">When one method fails</p>
+          <h3>Ingenuity</h3>
+          <p>Draw it. Build it. Act it out. Use smaller numbers. Write code. Explain it to a toy. Strong learners change the representation before blaming themselves.</p>
+          <button class="text-button" type="button" data-tip="ingenuity">Show a useful phrase</button>
+        </article>
+      </div>
+
+      <div class="tip-toast" role="status" aria-live="polite" data-tip-toast></div>
+    </section>
+
+    <section class="section ritual-section" id="ritual">
+      <div class="ritual-layout">
+        <div class="section-heading light-heading reveal">
+          <p class="eyebrow">Respect the ritual</p>
+          <h2>Teaching deserves a beginning.</h2>
+          <p>A lesson should not begin while someone is still looking for a pencil, answering a text, or moving laundry. A small ritual tells the brain: this matters now.</p>
+          <blockquote>“When one person teaches, two people learn.”</blockquote>
+          <p class="small-note">The teacher is thinking, adjusting, testing explanations, and learning the student at the same time.</p>
+        </div>
+
+        <div class="ritual-checklist reveal" style="--delay: 120ms">
+          <div class="checklist-head">
+            <div>
+              <p class="card-label">Two-minute opening ritual</p>
+              <h3>Arrive before the lesson begins.</h3>
+            </div>
+            <div class="progress-ring" data-ring aria-label="Ritual completion: 0 percent">
+              <svg viewBox="0 0 44 44" aria-hidden="true">
+                <circle class="ring-track" cx="22" cy="22" r="18"></circle>
+                <circle class="ring-progress" cx="22" cy="22" r="18"></circle>
+              </svg>
+              <span data-ring-text>0%</span>
+            </div>
+          </div>
+
+          <div class="checks" data-checklist="ritual">
+            <label><input type="checkbox"><span class="fake-check"></span><span><strong>Clear the surface.</strong> Keep only the tools needed now.</span></label>
+            <label><input type="checkbox"><span class="fake-check"></span><span><strong>Bring the materials.</strong> Pencil, paper, calculator, charger, water.</span></label>
+            <label><input type="checkbox"><span class="fake-check"></span><span><strong>Remove the phone.</strong> Put it outside arm's reach and out of sight.</span></label>
+            <label><input type="checkbox"><span class="fake-check"></span><span><strong>Name the mission.</strong> Say what will be understood or finished.</span></label>
+            <label><input type="checkbox"><span class="fake-check"></span><span><strong>Begin with recall.</strong> Retrieve yesterday's idea without looking.</span></label>
+          </div>
+
+          <button class="reset-button" type="button" data-reset="ritual">Reset checklist</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section space-section" id="space">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Build the study space</p>
+        <h2>The room teaches too.</h2>
+        <p>A study space should make the next correct action obvious and the next distraction inconvenient.</p>
+      </div>
+
+      <div class="space-grid">
+        <article class="diagram-card reveal">
+          <div class="desk-scene" aria-label="Diagram of a good study desk">
+            <div class="window"><span></span><span></span></div>
+            <div class="lamp"><span class="lamp-head"></span><span class="lamp-arm"></span><span class="lamp-base"></span><i></i></div>
+            <div class="monitor"><span class="camera-dot"></span><span class="screen-line line-a"></span><span class="screen-line line-b"></span></div>
+            <div class="notebook"><span></span><span></span><span></span></div>
+            <div class="water"></div>
+            <div class="desk"></div>
+            <div class="chair"></div>
+            <span class="callout callout-light">Light from the side</span>
+            <span class="callout callout-camera">Camera near eye level</span>
+            <span class="callout callout-paper">Paper ready</span>
+            <span class="callout callout-phone">Phone elsewhere</span>
+          </div>
+        </article>
+
+        <div class="space-rules">
+          <article class="rule reveal" style="--delay: 0ms">
+            <span>01</span>
+            <div><h3>Use a desk, not a bed.</h3><p>The bed is a strong cue for rest. Sit upright with both hands free and enough space to write.</p></div>
+          </article>
+          <article class="rule reveal" style="--delay: 80ms">
+            <span>02</span>
+            <div><h3>Make clutter earn its place.</h3><p>Every visible object competes a little for attention. Keep the current book, notebook, and tools. Move the rest.</p></div>
+          </article>
+          <article class="rule reveal" style="--delay: 160ms">
+            <span>03</span>
+            <div><h3>Control sound.</h3><p>Use a quiet room, closed door, or steady nonverbal background noise. Lyrics and conversations consume language attention.</p></div>
+          </article>
+          <article class="rule reveal" style="--delay: 240ms">
+            <span>04</span>
+            <div><h3>Prepare before motivation arrives.</h3><p>Leave the notebook open, pencil ready, link saved, and charger connected. Friction kills starts.</p></div>
+          </article>
+        </div>
+      </div>
+
+      <article class="light-lab reveal">
+        <div class="light-lab-copy">
+          <p class="card-label">Lighting lab</p>
+          <h3>No magic wavelength. Use practical daylight-like light.</h3>
+          <p>For daytime reading and focused work, research generally favors bright neutral-to-cool white light. A sensible home target is about <strong>4000 to 6500 K</strong> and roughly <strong>500 lux</strong> on the desk. Comfort still matters, and brighter blue-enriched light late at night can interfere with sleep.</p>
+          <div class="light-facts">
+            <span><b>4000 K</b> comfortable neutral white</span>
+            <span><b>5000–6500 K</b> alert daytime white</span>
+            <span><b>2700–3000 K</b> calmer evening light</span>
+          </div>
+        </div>
+
+        <div class="light-control-panel">
+          <div class="bulb-demo" data-bulb>
+            <span class="bulb-glow"></span>
+            <svg viewBox="0 0 96 120" aria-hidden="true">
+              <path class="bulb-glass" d="M48 5C25 5 11 22 11 43c0 15 8 26 18 34 5 4 7 8 7 14h24c0-6 2-10 7-14 10-8 18-19 18-34C85 22 71 5 48 5Z"/>
+              <path class="bulb-base" d="M36 91h24v8H36zM38 103h20v7H38zM42 114h12"/>
+            </svg>
+          </div>
+          <label for="kelvin">Color temperature <output for="kelvin" data-kelvin-output>4500 K</output></label>
+          <input id="kelvin" type="range" min="2700" max="6500" value="4500" step="100" data-kelvin>
+          <div class="range-labels"><span>Warm</span><span>Neutral</span><span>Cool</span></div>
+          <div class="light-verdict" data-light-verdict>
+            <strong>Comfortable study light</strong>
+            <span>Good for a normal daytime session.</span>
+          </div>
+          <div class="source-links">
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8957666/" target="_blank" rel="noreferrer">Attention and reaction time study</a>
+            <a href="https://www.frontiersin.org/journals/built-environment/articles/10.3389/fbuil.2023.1303028/full" target="_blank" rel="noreferrer">Reading light study</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section zoom-section" id="zoom">
+      <div class="section-heading light-heading reveal">
+        <p class="eyebrow">For live online learning</p>
+        <h2>Make the screen disappear.</h2>
+        <p>The goal is not to watch a tutoring session. The goal is to think, write, answer, build, and ask while another human happens to be on a screen.</p>
+      </div>
+
+      <div class="zoom-layout">
+        <div class="zoom-device reveal">
+          <div class="laptop-top">
+            <div class="camera"></div>
+            <div class="video-grid">
+              <div class="teacher-video">
+                <div class="teacher-avatar"><span></span></div>
+                <div class="equation">a² + b² = c²</div>
+                <span class="video-name">Teacher</span>
+              </div>
+              <div class="student-video">
+                <div class="student-avatar"><span></span></div>
+                <span class="video-name">Student</span>
+              </div>
+            </div>
+          </div>
+          <div class="laptop-base"><span></span></div>
+        </div>
+
+        <div class="zoom-check-card reveal" style="--delay: 120ms">
+          <div class="checklist-head">
+            <div>
+              <p class="card-label">Five-minute Zoom check</p>
+              <h3>Ready means ready to participate.</h3>
+            </div>
+            <span class="ready-badge" data-ready-badge>Not ready</span>
+          </div>
+          <div class="checks compact" data-checklist="zoom">
+            <label><input type="checkbox"><span class="fake-check"></span><span>Join two minutes early and test audio.</span></label>
+            <label><input type="checkbox"><span class="fake-check"></span><span>Put the camera near eye level with the face lit from the front or side.</span></label>
+            <label><input type="checkbox"><span class="fake-check"></span><span>Close games, messages, extra tabs, and notifications.</span></label>
+            <label><input type="checkbox"><span class="fake-check"></span><span>Keep paper in view and write throughout the lesson.</span></label>
+            <label><input type="checkbox"><span class="fake-check"></span><span>Use headphones when the room is noisy or echoing.</span></label>
+            <label><input type="checkbox"><span class="fake-check"></span><span>Bring one question or one difficult problem.</span></label>
+          </div>
+          <button class="reset-button" type="button" data-reset="zoom">Reset checklist</button>
+        </div>
+      </div>
+
+      <div class="zoom-principles">
+        <article class="reveal"><strong>Look away to think.</strong><p>Constant self-view and oversized faces can be tiring. Hide self-view when useful and take brief screen breaks.</p></article>
+        <article class="reveal" style="--delay: 80ms"><strong>Camera is not proof of learning.</strong><p>Answers, diagrams, explanations, and visible work are better evidence. A small whiteboard works beautifully.</p></article>
+        <article class="reveal" style="--delay: 160ms"><strong>Keep the learner active.</strong><p>Change mode every few minutes: listen, solve, predict, explain, draw, compare, or teach back.</p></article>
+      </div>
+    </section>
+
+    <section class="section practice-section" id="practice">
+      <div class="section-heading reveal">
+        <p class="eyebrow">How learning actually sticks</p>
+        <h2>Do not merely re-read.<br>Make the brain produce.</h2>
+        <p>Memory strengthens when a learner retrieves an idea, uses it, receives feedback, and returns to it later.</p>
+      </div>
+
+      <div class="learning-loop reveal">
+        <div class="loop-track" aria-hidden="true"></div>
+        <button class="loop-step active" type="button" data-loop="1"><span>1</span><strong>Recall</strong><small>Try from memory</small></button>
+        <button class="loop-step" type="button" data-loop="2"><span>2</span><strong>Attempt</strong><small>Solve before help</small></button>
+        <button class="loop-step" type="button" data-loop="3"><span>3</span><strong>Feedback</strong><small>Find the exact gap</small></button>
+        <button class="loop-step" type="button" data-loop="4"><span>4</span><strong>Explain</strong><small>Teach it simply</small></button>
+        <button class="loop-step" type="button" data-loop="5"><span>5</span><strong>Return</strong><small>Practice later</small></button>
+      </div>
+      <div class="loop-explanation reveal" data-loop-explanation>
+        <p class="card-label">Step 1: Recall</p>
+        <h3>Close the notes and retrieve.</h3>
+        <p>Write everything remembered, answer a question, sketch the system, or explain yesterday's idea before reopening the material.</p>
+      </div>
+
+      <div class="practice-grid">
+        <article class="practice-card reveal">
+          <span class="mini-icon">↻</span>
+          <h3>Space practice</h3>
+          <p>Three shorter sessions across several days usually beat one long cram. Returning after some forgetting makes retrieval do real work.</p>
+        </article>
+        <article class="practice-card reveal" style="--delay: 70ms">
+          <span class="mini-icon">?</span>
+          <h3>Use small tests</h3>
+          <p>Flash cards, blank-page recall, quick quizzes, and teach-backs are not just measurements. They are learning events.</p>
+        </article>
+        <article class="practice-card reveal" style="--delay: 140ms">
+          <span class="mini-icon">∞</span>
+          <h3>Mix examples</h3>
+          <p>Do not solve ten identical problems forever. Mix old and new types so the learner must choose a method, not merely repeat one.</p>
+        </article>
+        <article class="practice-card reveal" style="--delay: 210ms">
+          <span class="mini-icon">Zz</span>
+          <h3>Protect sleep</h3>
+          <p>Sleep supports memory formation and consolidation. Late-night cramming trades tomorrow's attention for tonight's extra minutes.</p>
+        </article>
+      </div>
+
+      <article class="sprint-card reveal" id="sprint">
+        <div class="sprint-copy">
+          <p class="card-label">Study sprint</p>
+          <h3>Start smaller than resistance.</h3>
+          <p>Choose one mission. Work with full attention. Stop for a real break before attention collapses.</p>
+          <div class="sprint-options" role="group" aria-label="Choose sprint length">
+            <button class="active" type="button" data-minutes="15">15 min</button>
+            <button type="button" data-minutes="25">25 min</button>
+            <button type="button" data-minutes="40">40 min</button>
+          </div>
+          <label class="mission-label" for="mission">Mission for this sprint</label>
+          <input id="mission" type="text" maxlength="80" placeholder="Example: Explain equivalent fractions without notes" data-mission>
+        </div>
+
+        <div class="timer" data-timer>
+          <svg viewBox="0 0 220 220" aria-hidden="true">
+            <circle class="timer-track" cx="110" cy="110" r="96"></circle>
+            <circle class="timer-progress" cx="110" cy="110" r="96"></circle>
+          </svg>
+          <div class="timer-face">
+            <span class="timer-state" data-timer-state>Ready</span>
+            <strong data-time>15:00</strong>
+            <button class="timer-button" type="button" data-timer-button>Begin</button>
+            <button class="timer-reset" type="button" data-timer-reset>Reset</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section roles-section" id="roles">
+      <div class="section-heading reveal">
+        <p class="eyebrow">One lesson, three responsibilities</p>
+        <h2>Everyone protects the conditions for learning.</h2>
+      </div>
+
+      <div class="role-tabs reveal">
+        <div class="tab-list" role="tablist" aria-label="Choose a role">
+          <button id="student-tab" class="active" type="button" role="tab" aria-selected="true" aria-controls="student-panel" data-role="student">Student</button>
+          <button id="parent-tab" type="button" role="tab" aria-selected="false" aria-controls="parent-panel" data-role="parent">Parent</button>
+          <button id="teacher-tab" type="button" role="tab" aria-selected="false" aria-controls="teacher-panel" data-role="teacher">Teacher</button>
+        </div>
+
+        <div class="role-panel" id="student-panel" role="tabpanel" aria-labelledby="student-tab" data-role-panel="student">
+          <p class="role-number">01</p>
+          <div><h3>Bring effort that can be seen.</h3><p>Attempt before asking, show the work, name the confusing step, correct errors, and return next time remembering at least one thing.</p></div>
+          <ul><li>Say what you tried.</li><li>Ask precise questions.</li><li>Treat mistakes as data.</li></ul>
+        </div>
+
+        <div class="role-panel" id="parent-panel" role="tabpanel" aria-labelledby="parent-tab" data-role-panel="parent" hidden>
+          <p class="role-number">02</p>
+          <div><h3>Protect practice without taking it over.</h3><p>Prepare the space and routine, notice effort and method, and let the student experience productive struggle before rescuing.</p></div>
+          <ul><li>Praise persistence specifically.</li><li>Ask “What have you tried?”</li><li>Do not turn one grade into an identity.</li></ul>
+        </div>
+
+        <div class="role-panel" id="teacher-panel" role="tabpanel" aria-labelledby="teacher-tab" data-role-panel="teacher" hidden>
+          <p class="role-number">03</p>
+          <div><h3>Find the missing connection.</h3><p>Watch the learner think. Change the example, representation, pace, or question until the hidden assumption becomes visible.</p></div>
+          <ul><li>Model thinking, not only answers.</li><li>Ask for explanations.</li><li>End with a successful retrieval.</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section">
+      <div class="closing-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+      <p class="eyebrow">The whole guide in one sentence</p>
+      <h2>Prepare the space. Respect the teacher. Attempt the work. Stay curious. Return tomorrow.</h2>
+      <div class="closing-actions">
+        <button class="button button-primary" type="button" data-print>Print this guide</button>
+        <a class="button button-quiet" href="#top">Back to top</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>The Learning Ritual</p>
+    <div>
+      <a href="https://ies.ed.gov/ncee/wwc/PracticeGuide/1" target="_blank" rel="noreferrer">Learning research</a>
+      <a href="https://pubmed.ncbi.nlm.nih.gov/39288097/" target="_blank" rel="noreferrer">Sleep and memory</a>
+      <a href="https://news.stanford.edu/stories/2021/02/four-causes-zoom-fatigue-solutions" target="_blank" rel="noreferrer">Video fatigue</a>
+    </div>
+    <p class="footer-note">Built as a practical guide, not a substitute for individual medical, vision, or educational advice.</p>
+  </footer>
+
+  <div class="completion-modal" data-modal hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" aria-label="Close" data-modal-close>×</button>
+      <p class="eyebrow">Sprint complete</p>
+      <h2 id="modal-title">Good. Now retrieve.</h2>
+      <p data-modal-mission>Without looking, write the most important thing learned during this sprint.</p>
+      <button class="button button-primary" type="button" data-modal-close>Done</button>
+    </div>
+  </div>
+</body>
+</html>
